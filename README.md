@@ -1,37 +1,27 @@
-## Agenda_Python_Django
+## Prova NL_Agenda_Python_Django
 
 #### Objetivo:
-	Este projeto tem como objetivo criar uma agenda estilo to-do list com Python Django. 
+	Aplicar os conhecimentos de Python, Django, GitHub, CSS e HTML para produzir uma aplicação 
+	capaz de criar eventos. Semelhante à uma "To-Do List".
 	
 	
-	
-![Screens](https://i.imgur.com/KDryu8r.png "Screens")
-	
+## Criando Usuário
+1º Utilize o comando " python manage.py createsuperuser " no VSCode para criar um usuário admin. Para testes foi criado o usuário Admin e senha admin.
+
+2° Execute o server com o comando " python manage.py runserver ", caso apresente algum erro utilize o 
+comando " python manage.py migrate " e depois dê run no server.
+
+3º Para gerenciar os usuários criados acesse o seguinte site: " http://127.0.0.1:8000/admin/login/?next=/admin/ ".
+
+4º O VSCode irá te fornecer um link de acesso para a aplicação, este link é de um server local, então só funcionará em sua máquina.
+
+5º Realize o login e efetue a criação de eventos.
+
+OBS.: Caso alguma tela apresente algum erro, utilize o comando CTRL+F5 para resolvê-lo.
+
+![Screens](https://cdn.discordapp.com/attachments/889344681593425982/914204949775265842/Captura_de_tela_2021-11-27_142042.png "Screens")
+![Screens](https://cdn.discordapp.com/attachments/889344681593425982/914204960370069554/Captura_de_tela_2021-11-27_142207.png "Screens")
+![Screens](https://cdn.discordapp.com/attachments/889344681593425982/914204969807274004/Captura_de_tela_2021-11-27_142224.png "Screens")
+![Screens](https://cdn.discordapp.com/attachments/889344681593425982/914204980955734096/Captura_de_tela_2021-11-27_142243.png "Screens")
+
 <hr style="height: 10px;">
-##### Login
-	Tela de login, com Admin, somente ele pode cadastrar novos usuários
-	
-![CSS e DJango](https://i.imgur.com/1tfRkoo.png "CSS e DJango")
-
-
-### CSS no Django
-
-Para trabalhar com CSS no Django, utilizamos a pasta "static" dentro da pasta Core do projeto.
-
-![core](https://i.imgur.com/q36AdSw.png "core")
-
-Adicionamos o STATICFILES_DIRS no arquivo settings 
-
-![settings](https://i.imgur.com/pz138Yh.png "settings")
-
-No HTML, adicionamos o {% load static %} em cima da tag < link> e no SRC adicionamos {"% static 'caminho' %"}
-
-
-![load](https://i.imgur.com/cYw8Geq.png "load")
-
-Lista de tarefas (Retificada)
-![lista](https://i.imgur.com/mAHZp66.png "lista")
-
-tela de cadastro de novo item da lista
-
-![Cadastro de novo item](https://i.imgur.com/MWQxBG7.png "Cadastro de novo item")
